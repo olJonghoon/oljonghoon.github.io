@@ -11,7 +11,8 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-		"format": "npx prettier -w ."
+		"format": "npx prettier -w .",
+		"deploy": "astro deploy"
 	},
 	"devDependencies": {
 		"@astrojs/lit": "^4.0.1",

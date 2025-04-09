@@ -3,11 +3,10 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
 import lit from "@astrojs/lit";
-import github from "@astrojs/github";
 
 export default defineConfig({
   site: 'https://olJonghoon.github.io/', // Your GitHub Pages URL
   base: '/', // Use '/' for user/organization GitHub Pages
   sitemap: true,
-  integrations: [sitemap(), mdx(), lit(), icon(), github()],
+  integrations: [sitemap(), mdx(), lit(), icon()],
 });

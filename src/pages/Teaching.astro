@@ -1,0 +1,107 @@
+---
+// filepath: /Users/jolee/Documents/GitHub/odyssey-theme/src/pages/Teaching.astro
+import Layout from '../layouts/Page.astro';
+import TeachingCard from '../components/sections/TeachingCard.astro';
+
+const seo = {
+  title: 'Teaching',
+  description: 'Teaching | Jonghoon Lee',
+};
+
+const courses = [
+  {
+    title: 'Political Economy and Public Policy',
+    year: 'Spring 2025',
+    level: 'Undergraduate Seminar',
+    institution: 'Arkansas State University',
+    syllabiLink: 'https://example.com/syllabus1',
+  },
+  {
+    title: 'Human Resource Management',
+    year: 'Spring 2025',
+    level: 'Master of Public Administration Seminar',
+    institution: 'Arkansas State University',
+    syllabiLink: 'https://example.com/syllabus2',
+  },
+  {
+    title: 'Public Budgeting and Finance',
+    year: 'Fall 2024',
+    level: 'Master of Public Administration Seminar',
+    institution: 'Arkansas State University',
+    syllabiLink: 'https://example.com/syllabus2',
+  },
+  {
+    title: 'Introduction to Public Administration',
+    year: 'Spring 2024, Fall 2023',
+    level: 'Undergraduate Lecture',
+    institution: 'Texas A&M University',
+    syllabiLink: 'https://example.com/syllabus3',
+  },
+  {
+    title: 'Politics and Bureaucracy',
+    year: 'Spring 2024, Spring 2023, Fall 2022',
+    level: 'Undergraduate Seminar',
+    institution: 'Texas A&M University',
+    syllabiLink: 'https://example.com/syllabus4',
+  },
+  {
+    title: 'Causal Inference',
+    year: 'Spring 2022',
+    level: 'Graduate Lecture, Teaching Assistant',
+    institution: 'Texas A&M University',
+    syllabiLink: 'https://example.com/syllabus4',
+  },
+  {
+    title: 'Applied Game Theory',
+    year: 'Spring 2021',
+    level: 'Graduate Lecture, Teaching Assistant',
+    institution: 'Texas A&M University',
+    syllabiLink: 'https://example.com/syllabus4',
+  },
+  {
+    title: 'Polimetrics',
+    year: 'Spring 2020',
+    level: 'Undergraduate Lecture, Teaching Assistant',
+    institution: 'Texas A&M University',
+    syllabiLink: 'https://example.com/syllabus4',
+  },
+];
+---
+
+<Layout {seo}>
+  <section class="teaching-page">
+    <h2>Teaching</h2>
+    <div class="teaching-grid">
+      {courses.map(course => (
+        <TeachingCard
+          title={course.title}
+          year={course.year}
+          level={course.level}
+          institution={course.institution}
+          syllabiLink={course.syllabiLink}
+        />
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .teaching-page {
+      max-width: 1440px;
+      margin: 1rem auto;
+      padding: 3rem;
+  }
+
+  .teaching-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .teaching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Two cards per row */
+    gap: 2.5rem; /* Space between cards */
+    padding: 2rem;
+  }
+</style>

@@ -1,0 +1,120 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../layouts/Page.astro';
+import ResearchSection from '../components/sections/ResearchSection.astro';
+
+const seo = {
+    title: 'Research',
+    description: 'Research | Jonghoon Lee',
+};
+---
+
+<Layout {seo}>
+  <section class="research-page">
+    <h2 style="margin-top: 0;">Publications</h2>
+    <!-- Research Article 1 -->
+    <ResearchSection
+        index={1}
+        title="Antitrust and Corporate Taxation"
+        coauthors="Amy Pond"
+        journal="Business and Politics"
+        year="2025"
+        link="https://www.cambridge.org/core/journals/business-and-politics/article/antitrust-and-corporate-taxation/58B798971AB3CDA2E14F0AEE1D1FC7E5"
+        abstract="Although citizens value competitive markets and support small businesses, we observe substantial variation in market concentration. Why do politicians abstain from taking action to reduce concentration? We propose an often overlooked political benefit to concentrated markets: When concentration increases, competition is less pronounced and firms earn larger profits. These profits can be taxed for government revenue or used to reward business-friendly politicians. We expect politicians to impose more lenient competition policies toward firms that provide larger sources of revenue. Moreover, this relationship should be especially strong under authoritarian political institutions, where politicians only weakly value the free market and consumer outcomes and where institutional commitments to unbiased policies are weak. We derive our theoretical claims from a formal model. We draw on both cross-country evidence and evidence from Turkey at the firm and industry level to evaluate our claims. We find that as political institutions become less representative, firms that make higher tax payments tend to control more assets, operate in more concentrated industries, and engage in higher value M&As. Our study points to the weak provision of competition policies as a source of rent-seeking."
+    />
+    <!-- Research Article 2 -->
+    <ResearchSection
+        index={2}
+        title="A Visa for a Revolution? A Theory of Anti-Authoritarian Immigration Policy"
+        coauthors="Carlo Horz"
+        journal="Journal of Theoretical Politics"
+        year="2024"
+        link="https://journals.sagepub.com/doi/10.1177/09516298241266268?icid=int.sj-abstract.citing-articles.2"
+        abstract="Sometimes, countries target immigration policies to citizens of authoritarian regimes with the goal of influencing these regimes’ politics. Which kinds of immigration rules are optimal anti-authoritarian policies and which trade-offs do policy-makers face? We analyze a game-theoretic model in which a destination country, an autocrat, and a citizen interact. The citizen can engage in protest and emigrate while the autocrat can redistribute and repress to counter these threats. A revolution occurs if the autocrat does not repress and the citizen protests. Policy-makers in destination countries anticipate that in equilibrium, a more permissive immigration policy reduces repression but also reduces protesting. Therefore, the optimal policy strikes a balance between these two effects. A concern for improving the citizen’s welfare renders policy more permissible while the desire to punish the autocrat has an ambiguous effect. Finally, we show that a revolution and large-scale emigration are difficult to achieve at the same time."
+    />
+    <!-- Research Article 3 -->
+    <ResearchSection
+        index={3}
+        title="Travel to Allies or Adversaries? A Compositional Analysis of U.S. Diplomatic Visits"
+        coauthors="James D. Kim"
+        journal="Social Science Quarterly"
+        year="2024"
+        link="https://onlinelibrary.wiley.com/doi/10.1111/ssqu.13348"
+        abstract="When and why do U.S. leaders visit their allies or adversaries? Much of the literature on diplomatic visits treats each visit as an independent observation. In this article, we analyze high-level diplomatic visits as compositional data based on the assumption that they are scarce political resources. We find that U.S. diplomatic visits to its allies are defense-oriented, so leaders spend more time touring them during their security crises to signal reassurance. Additionally, we find that visits to adversaries are motivated by leaders' domestic political concerns, particularly their high public unpopularity. Visiting a hostile country is a challenging and salient foreign policy task, providing a high-profile opportunity to improve their domestic image and standing. This effect is particularly significant in a divided government, where leaders turn to foreign policy to maximize domestic political impacts amid domestic gridlock."
+    />
+    <p></p><p></p><p></p>
+    <h2>Working Papers</h2>
+    <!-- Research Article -->
+    <ResearchSection
+        index={4}
+        title="How Do Public Agencies Respond to Budgetary Control? A Theory of Strategic Task Portfolio in Public Administration"
+        journal="Under Review"
+        link="/public/assets/papers/Antitrust.pdf"
+        abstract="How do public agencies manage diverse programs under limited budgets? Resource constraints force agencies to prioritize tasks, requiring strategic decisions about how to allocate resources effectively. In this paper, I develop a game-theoretical model that explores how agencies shape and restructure their task portfolios under budgetary constraints. In response to budget reductions, I argue that agencies reallocate resources by prioritizing more efficient tasks for improved performance, within their portfolios. To test my theoretical claims, I analyze an original dataset of antitrust cases filed by the U.S. Antitrust Division from 1970 to 2019. As expected, I find that the AD strategically adjusts its litigation portfolio in response to budgetary changes. Specifically, budget cuts prompt the AD to significantly increase its focus on antitrust criminal cases - the most efficient type for improving performance metrics -- while reducing attention to other types of cases. This study offers new insight into how public agencies navigate budgetary constraints to achieve their public missions while meeting performance expectations."
+    />
+    <!-- Research Article -->
+    <ResearchSection
+        index={5}
+        title="Self-Granting Immunity: When Do Politicians Grant Themselves Judicial Immunity?"
+        journal="Under Review"
+        link="/public/assets/papers/Immunity.pdf"
+        abstract="Judicial immunity for elected politicians has substantial implications on democracy and its resilience. However, no systematic research has been conducted to explain why some countries offer broader immunity while others provide narrower. In this paper, I offer a game-theoretical model to explain the cross-national variation in judicial immunity. The model focuses on the constitutional negotiation process between authoritarian successors and pro-democrats at the time of democratization. I show how the political landscape post-democratization shapes ruling elites' incentives to extend or shrink constitutional immunity for politicians. To test my theoretical claims, I assemble data on constitutional provisions of judicial immunity for politicians in countries that have been democratized since 1975. As expected, I find suggestive evidence that intense political competition leads to broader immunity for legislators, but conditional on sufficiently low potential costs of political prosecutions. This paper enhances our understanding of the role of judicial institutions in promoting democratic accountability."
+    />
+    <!-- Research Article -->
+    <ResearchSection
+        index={6}
+        title="Establishing Anti-Corruption Agencies: the Electoral Incentive for Self-Restraint Reforms"
+        abstract="Scholars have turned to the logics of credible commitment and political insurance to understand why incumbent politicians introduce reforms that limit their own authority. Typically, incumbents seek either to lend credibility to their promises or to reduce the risk of losing subsequent elections. Yet, these two theories have seldom been integrated. This research addresses this gap by examining the establishment of anti-corruption agencies (ACAs). Creating an ACA can enhance the credibility of an incumbent's commitment to honesty. Nonetheless, incumbent politicians have an incentive to make such credible commitments only when faced with intense electoral competition. I test my theoretical claims using a database from 65 developing democratic countries spanning 1975 to 2017. The findings suggest that an anti-corruption agency is more likely to be established in corrupt, developing nations."
+    />
+    <!-- Research Article -->
+    <ResearchSection
+        index={7}
+        title="Presidential Presence: U.S. Crisis Reassurance in Divided Government"
+        coauthors="James D. Kim"
+        abstract="Existing research shows that U.S. presidential visits can have both deterrent and reassuring effects on host nations. However, the specific conditions under which presidents strategically use travel diplomacy as a tool for reassurance remain unclear. We argue that two key factors drive U.S. presidents to engage in reassurance visits: foreign security crises and a domestically divided government. Ongoing crises abroad create opportunities for presidents to maximize the political impact of their presence. Visiting a conflict zone is a politically salient event that conveys a strong and credible signal due to the high risks involved. A divided government at home increases the willingness to undertake reassurance visits, as military reassurance options are constrained by domestic gridlock, while presidents have substantial discretion in planning and executing foreign visits. By analyzing the geographic composition of presidential visits from 1950 to 2010, we find partial empirical support for our argument. When Asian allies face crises, U.S. presidents are more likely to visit the region during a divided government. In contrast, presidential visits to Europe increase in response to regional security crises regardless of domestic political conditions. Our study suggests that U.S. presidents strategically use their physical presence for crisis reassurance, particularly when domestic constraints limit alternative policy options."
+    />
+    <!-- Research Article -->
+    <ResearchSection
+        index={8}
+        title="Geography, Timing, and Rhetoric: A Text Analysis of U.S. Presidential Campaign Speeches"
+        coauthors="Jongwoo Jeong"
+        abstract="In-person campaign events offer candidates a unique opportunity to engage with voters more intimately in democratic elections. How do candidates leverage these personal interactions to shape their public image and secure votes? While previous works have extensively investigated differences in campaign rhetoric across candidates, we surprisingly less know about the variation within the same candidate. In this paper, we argue that candidates strategically tailor their speeches based on the timing and geography of each campaign stop. To test our hypotheses, we employ text analysis with a comprehensive dataset of campaign speeches from the three most recent electoral cycles that highlight the post-Trump era elections from 2016 to 2024. We find evidence that political candidates strategically maneuver their campaign speeches, affected by the context of political geography and the relative timing toward the election day. This study broadens our understanding of political communication in democratic elections."
+    />
+    <p></p><p></p><p></p>
+    <h2>Works in Progress</h2>
+    <!-- Research Article -->
+    <ResearchSection
+        index={9}
+        title="Allege Electoral Fraud in Advanced Democracies: When Do Losers Defy Electoral Outcomes?"
+        coauthors = "Younghyun Lee"
+        abstract="This paper investigates the conditions under which losing parties in advanced democracies allege electoral fraud instead of conceding defeat. Drawing on recent incidents in the U.S. and South Korea, we revisit Przeworski’s foundational question: why do electoral losers sometimes defy the rules of the game? We propose a formal model grounded in rational choice theory, where losers weigh the costs of challenging results against the probability of reversing the outcome, the policy distance between parties, and perceived election integrity. Using an original dataset of fraud allegations across OECD democracies, we explore how polarization, populism, and erosion of trust in institutions influence this decision. Our findings contribute to the literatures on democratic backsliding, electoral manipulation, and the development-democracy nexus, emphasizing the destabilizing effect of fraud allegations on democratic sustainability even in established democracies."
+    />
+    <!-- Research Article -->
+    <ResearchSection
+        index={10}
+        title="Female Candidates, Partisanship and Strategies to Compete in U.S. Congressional Elections"
+        abstract="From the beginning of their career, ambitious women carefully build their strategies to succeed in political competition. In this respect, it is rational to speculate that female candidates may consider partisanship choice based on not only ideological affinity to a party but also opportunity structures provided by a party, whereby they may face a trade-off between policy concerns and office-seeking motivations. Therefore, in this paper, I advance a theory of strategic partisanship choice of female candidates for winning elections. I argue that a (moderate) liberal female candidate may run the election under the Republican label under a particular condition. I test my theoretical claims using both the aggregate- and individual-level data on U.S. House primary elections from 2006 to 2018. I find evidence that partially supports my hypotheses."    />
+  </section>
+
+  <style>
+    .research-page {
+      max-width: 1440px;
+      margin: 1rem auto;
+      padding: 3rem;
+    }
+
+    .research-page h2 {
+      font-size: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .research-page p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+  </style>
+</Layout>

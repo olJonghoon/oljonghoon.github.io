@@ -1,0 +1,60 @@
+---
+import {
+	Button,
+	ThreeColumnTextSection,
+} from '@components/odyssey-theme';
+import Layout from '../layouts/Page.astro';
+
+const seo = {
+	title: 'Dissertation',
+	description: 'Dissertation | Jonghoon Lee',
+};
+---
+
+<Layout {seo}>
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2 style="font-size: 1.5rem;">How Do Public Agencies Respond to Budgetary Control? A Theory of Strategic Task Portfolio in Public Administration
+            </h2>
+			<p>
+				Budgetary control is a commonly used tool for elected politicians to gain control over bureaucracy. 
+                Yet, it creates a dilemma for agencies: how can public agencies maintain their diverse programs 
+                while simultaneously improving performance measures with fewer resources? In response to a budget 
+                reduction, I argue that agencies concentrate more on efficient tasks (i.e., antitrust criminal cases) 
+                to boost performance metrics at the expense of other types of antitrust litigation. 
+                To test these theoretical claims, I draw evidence from the data on antitrust litigation filed by 
+                the U.S. Antitrust Division from 1970 to 2019.
+			</p>
+		</div>
+		<Button slot="column-1-cta">Learn More</Button>
+		<div slot="column-2-body">
+			<h2 style="font-size: 1.5rem;">Establishing Anti-Corruption Agencies: the Electoral Incentive for Self-Restraint Reforms
+            </h2>
+			<p>
+				In the second paper, I turn to the analysis at the cross-national level, exploring the conditions 
+                under which incumbents constrain themselves. By focusing on the establishment of anti-corruption agencies, 
+                I bridge two well-established, but seldom-integrated literatures: credible commitment and political insurance. 
+                Creating an ACA can enhance the credibility of an incumbent’s commitment to fighting corruption 
+                and maintaining honesty. But, the incumbent has an incentive to make such credible commitments only when 
+                faced with intense electoral competition. I test my theoretical arguments using the data on developing 
+                democracies from 1975 to 2012. 
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>Learn More</Button>
+		<div slot="column-3-body">
+			<h2 style="font-size: 1.5rem;">Self-Granting Immunity: When Do Politicians Grant Themselves Judicial Immunity?
+            </h2>
+			<p>
+				Judicial immunity for politicians has substantial implications on democracy and its resilience. 
+                However, no systematic research has been conducted to explain why some countries offer extensive 
+                immunity to politicians, while others provide narrower or no immunity. In this study, 
+                I develop a formal model that shows how the political climate in post-democratization 
+                shapes ruling elites’ incentives to strengthen or weaken immunity provisions for themselves. 
+                To evaluate my theoretical implications, I collect original data about constitutional immunity 
+                provisions in countries that underwent democratization since 1975.
+			</p>
+		</div>
+		<Button slot="column-3-cta">Learn More</Button>
+	</ThreeColumnTextSection>
+
+</Layout>

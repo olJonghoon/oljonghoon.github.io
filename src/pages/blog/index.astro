@@ -27,21 +27,13 @@ const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 );
 
 const seo = {
-	title: 'Blog | Astro Odyssey Theme',
-	description: 'Astro Odyssey Theme Blog Page',
+	title: 'Blog',
+	description: 'Blog | Jonghoon Lee',
 };
 ---
 
 <Layout {seo}>
 	<Container>
-		<TextCardSection>
-			<h1>Odyssey Blog</h1>
-			<p>
-				View our blog to stay up to date on the latest news about our business.
-				Want to be the first to hear about a new blog post? Join our newsletter!
-			</p>
-			<NewsletterForm />
-		</TextCardSection>
 		<section class="blog-posts-list__section">
 			<h2>Recent Posts</h2>
 			<BlogPostsList posts={posts} />
@@ -49,8 +41,20 @@ const seo = {
 	</Container>
 </Layout>
 
+
 <style>
-	.blog-posts-list__section {
-		margin: var(--section-margin) auto;
-	}
+    /* General Section Styling */
+    .blog-posts-list__section,
+    .research-page {
+        max-width: 1440px;
+        margin: 1rem auto;
+        padding: 3rem;
+    }
+
+    /* Blog Posts List Section */
+    .blog-posts-list__section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
 </style>

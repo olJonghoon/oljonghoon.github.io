@@ -1,0 +1,52 @@
+---
+// filepath: /Users/jolee/Documents/GitHub/odyssey-theme/src/components/TeachingCard.astro
+const { title, year, level, institution, syllabiLink } = Astro.props;
+---
+
+<div class="teaching-card">
+  <h3 class="course-title">{title}</h3>
+  <p class="course-details">
+    {level} <br />
+    {year}<br />
+    {institution}
+  </p>
+  {syllabiLink && (
+    <a href={syllabiLink} target="_blank" rel="noopener noreferrer" class="syllabi-link">
+      Syllabus
+    </a>
+  )}
+</div>
+
+<style>
+  .teaching-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .course-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .course-details {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+
+  .syllabi-link {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .syllabi-link:hover {
+    text-decoration: underline;
+  }
+</style>

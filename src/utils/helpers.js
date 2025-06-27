@@ -11,12 +11,14 @@ export function generateSlug(string) {
 }
 
 export function generateTagData(categories) {
-	let categoryData = [];
-	categories.forEach(category => {
-		categoryData.push({
-			title: category,
-			slug: `${generateSlug(category)}`,
-		});
-	});
-	return categoryData;
+    let categoryData = [];
+    if (Array.isArray(categories)) {
+        categories.forEach(category => {
+            categoryData.push({
+                title: category,
+                slug: `${generateSlug(category)}`,
+            });
+        });
+    }
+    return categoryData;
 }

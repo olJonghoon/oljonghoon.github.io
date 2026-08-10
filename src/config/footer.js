@@ -1,7 +1,7 @@
 export const footerSocials = [
 	{
 	  name: 'Google Scholar',
-	  url: 'https://scholar.google.com/citations?user=p8zsSDEAAAAJ&hl=en', // Replace YOUR_USER_ID with your actual Google Scholar ID
+	  url: 'https://scholar.google.com/citations?hl=en&user=PorlD_MAAAAJ', // Replace YOUR_USER_ID with your actual Google Scholar ID
 	  icon: "mdi:school", // Use an appropriate icon
 	},
   {
